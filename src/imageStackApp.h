@@ -21,9 +21,21 @@ class imageStackApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+        void drawInteractionArea();
     
+    //------------ This is 4 img seq
     ofImageStack** imageStacks;
-    ofEasyCam cam; // add mouse controls for camera movement
     vector<string>paths;
+    //------------ This is cam
+    ofEasyCam cam; // add mouse controls for camera movement
+    bool                help;
+    //------------- This is snapdshots
+    
+    int 				snapCounter;
+    char 				snapString[255];
+    ofImage 			snap;
+    bool 				bSnapshot;
+
+
 
 };
