@@ -16,9 +16,11 @@ ofImageStack::ofImageStack(string path_,int x_, int y_, int z_){
     y = y_;
     z = z_;
     ofDirectory dir;
-    
+    printf("Loading images from %s\n",path_.c_str());
     int nFiles = dir.listDir(path_);
+    
     if(nFiles) {
+        printf("found %d images\n",nFiles);
         
         for(int i=0; i<dir.numFiles(); i++) {
             
@@ -26,9 +28,11 @@ ofImageStack::ofImageStack(string path_,int x_, int y_, int z_){
             string filePath = dir.getPath(i);
             images.push_back(ofImage());
             images.back().loadImage(filePath);
+            images.back().mirror(true, false);
         }
+    }else{
+     printf("Could not find folder\n");   
     }
-    else printf("Could not find folder\n");
     
 
     

@@ -117,6 +117,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39C369831740D77F00823ECD /* class */ = {
+			isa = PBXGroup;
+			children = (
+				39C3697E1740CB6300823ECD /* ofImageStack.cpp */,
+				39C3697F1740CB6300823ECD /* ofImageStack.h */,
+			);
+			name = class;
+			sourceTree = "<group>";
+		};
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,8 +199,7 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* imageStackApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* imageStackApp.h */,
-				39C3697E1740CB6300823ECD /* ofImageStack.cpp */,
-				39C3697F1740CB6300823ECD /* ofImageStack.h */,
+				39C369831740D77F00823ECD /* class */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;

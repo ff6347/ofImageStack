@@ -2,6 +2,9 @@
 
 #include "ofMain.h"
 #include "ofImageStack.h"
+
+//#define NSTACKS 4
+
 class imageStackApp : public ofBaseApp{
 
 	public:
@@ -19,6 +22,8 @@ class imageStackApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-    ofImageStack *firstStack;
-		
+    ofImageStack** imageStacks;
+    ofEasyCam cam; // add mouse controls for camera movement
+    vector<string>paths;
+
 };
