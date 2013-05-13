@@ -1,8 +1,8 @@
 #pragma once
 
 #include "ofMain.h"
-
-class testApp : public ofBaseApp{
+#include "ofImageStack.h"
+class imageStackApp : public ofBaseApp{
 
 	public:
 		void setup();
@@ -18,5 +18,7 @@ class testApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+    
+    ofImageStack *firstStack;
 		
 };

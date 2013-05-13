@@ -1,61 +1,64 @@
-#include "testApp.h"
+#include "imageStackApp.h"
 
 //--------------------------------------------------------------
-void testApp::setup(){
+void imageStackApp::setup(){
+    firstStack = new ofImageStack("images/aemap_small",0,0,0);
+    
+}
+
+//--------------------------------------------------------------
+void imageStackApp::update(){
 
 }
 
 //--------------------------------------------------------------
-void testApp::update(){
+void imageStackApp::draw(){
+
+    
+    firstStack->draw();
+}
+
+//--------------------------------------------------------------
+void imageStackApp::keyPressed(int key){
 
 }
 
 //--------------------------------------------------------------
-void testApp::draw(){
+void imageStackApp::keyReleased(int key){
 
 }
 
 //--------------------------------------------------------------
-void testApp::keyPressed(int key){
+void imageStackApp::mouseMoved(int x, int y ){
 
 }
 
 //--------------------------------------------------------------
-void testApp::keyReleased(int key){
+void imageStackApp::mouseDragged(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseMoved(int x, int y ){
+void imageStackApp::mousePressed(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseDragged(int x, int y, int button){
+void imageStackApp::mouseReleased(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mousePressed(int x, int y, int button){
+void imageStackApp::windowResized(int w, int h){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseReleased(int x, int y, int button){
+void imageStackApp::gotMessage(ofMessage msg){
 
 }
 
 //--------------------------------------------------------------
-void testApp::windowResized(int w, int h){
-
-}
-
-//--------------------------------------------------------------
-void testApp::gotMessage(ofMessage msg){
-
-}
-
-//--------------------------------------------------------------
-void testApp::dragEvent(ofDragInfo dragInfo){ 
+void imageStackApp::dragEvent(ofDragInfo dragInfo){ 
 
 }
